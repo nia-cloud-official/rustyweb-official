@@ -1,5 +1,7 @@
 # RustyWeb
 
+[![Build and Publish](https://github.com/nia-cloud-official/rustyweb-official/actions/workflows/main.yml/badge.svg)](https://github.com/nia-cloud-official/rustyweb-official/actions/workflows/main.yml)
+
 RustyWeb is a full-stack web framework that combines a **Rust backend** with a modern **JavaScript frontend** powered by WebAssembly (WASM). It is designed to enable developers to build fast, scalable, and maintainable web applications with an experience similar to frameworks like Next.js, but with Rust powering the server-side.
 
 ---
