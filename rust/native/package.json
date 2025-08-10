@@ -1,0 +1,7 @@
+{
+  "name": "rustyweb-native",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "napi build --release"
+  }
+}

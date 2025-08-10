@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ title }}</title>
+    <script type="module" src="/static/app.js"></script>
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <p>This is a RustyWeb app shell.</p>
+
+    <form id="add">
+      <input name="a" value="2" />
+      <input name="b" value="3" />
+      <button type="submit">Add</button>
+    </form>
+    <div id="res"></div>
+
+    <script>
+    document.getElementById('add').addEventListener('submit', async (ev) => {
+      ev.preventDefault();
+      const form = new FormData(ev.target);
+      const res = await fetch('/api/add', { method: 'POST', body: new URLSearchParams(form) });
+      const json = await res.json();
+      document.getElementById('res').textContent = 'Result: ' + json.result;
+    });
+    </script>
+  </body>
+</html>

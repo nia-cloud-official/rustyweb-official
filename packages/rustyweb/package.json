@@ -1,0 +1,13 @@
+{
+  "name": "rustyweb",
+  "version": "0.1.0",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "pkg/",
+    "native/",
+    "bin/",
+    "README_INSTALL.md"
+  ],
+  "license": "MIT"
+}
