@@ -63,3 +63,4 @@ jobs:
           files: packages/rustyweb/bin/*,packages/rustyweb/native/*,packages/rustyweb/pkg/*
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+
